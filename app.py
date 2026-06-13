@@ -49,4 +49,5 @@ with gr.Blocks(css=custom_css) as aapno_app:
             student_btn.click(student_bot, inputs=[class_dropdown, topic_input], outputs=student_output)
     gr.HTML("<div class='custom-footer'>© 2026 आपणो एआई। ऑल राइट्स रिजर्व्ड। <br>🚀 <b>मुख्य डेवलपर: शिवराज जाट (Shivraj Jat)</b></div>")
 
-aapno_app.launch()
+aapno_app.launch(server_name="0.0.0.0", server_port=10000)
+
